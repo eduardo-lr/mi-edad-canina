@@ -16,7 +16,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="¿Cuántos años tienes?"
+        android:text="@string/how_old_are_you"
         android:gravity="center"
         android:paddingTop="5dp"
         android:paddingBottom="5dp"
@@ -30,7 +30,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:inputType="number"
-        android:hint="Ingresa tu edad"/>
+        android:hint="@string/input_your_age"/>
 
     <TextView
         android:id="@+id/result_text"
@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:textColor="@color/black"
-        tools:text="texto de prueba"
+        tools:text="Texto de prueba"
         android:gravity="center"/>
 
     <Button
@@ -48,6 +48,6 @@
         android:paddingTop="10dp"
         android:layout_marginStart="80dp"
         android:layout_marginEnd="80dp"
-        android:text="Calcula"/>
+        android:text="@string/compute"/>
 
 </LinearLayout>

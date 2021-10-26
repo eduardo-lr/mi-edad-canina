@@ -12,18 +12,18 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val ageEdit : EditText = findViewById<EditText>(R.id.age_edit)
-        val resultText : TextView = findViewById<TextView>(R.id.result_text)
-        val button : Button = findViewById<Button>(R.id.button)
+        val ageEdit = findViewById<EditText>(R.id.age_edit)
+        val resultText = findViewById<TextView>(R.id.result_text)
+        val button = findViewById<Button>(R.id.button)
 
         button.setOnClickListener{
             val ageString : String = ageEdit.text.toString()
             try {
                 val ageInt : Int = ageString.toInt()
                 val result : Int = ageInt * 7
-                resultText.text = "Tu edad caninca es de ${result} años"
+                resultText.text = getString(R.string.text_result, result)
             } catch (nfe: NumberFormatException) {
-                Toast.makeText(this, "Inserta tu edad", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, R.string.you_must_insert_your_age, Toast.LENGTH_SHORT).show()
             }
         }
     }
