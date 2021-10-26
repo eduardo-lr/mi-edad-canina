@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,9 +18,13 @@ class MainActivity : AppCompatActivity() {
 
         button.setOnClickListener{
             val ageString : String = ageEdit.text.toString()
-            val ageInt : Int = ageString.toInt()
-            var result : Int = ageInt * 7
-            resultText.text = "Tu edad caninca es de ${result} años"
+            try {
+                val ageInt : Int = ageString.toInt()
+                val result : Int = ageInt * 7
+                resultText.text = "Tu edad caninca es de ${result} años"
+            } catch (nfe: NumberFormatException) {
+                Toast.makeText(this, "Inserta tu edad", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 }
