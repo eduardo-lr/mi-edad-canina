@@ -5,4 +5,5 @@
     <string name="compute">CALCULA</string>
     <string name="you_must_insert_your_age">Inserta tu edad</string>
     <string name="text_result">"Tu edad canina es de %d años"</string>
+    <string name="your_age_cannot_be_to_long">"¡Tu edad no puede ser tan grande!"</string>
 </resources>
