@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name" translatable="false">Edad canina</string>
-    <string name="how_old_are_you">How old are yoy?</string>
+    <string name="how_old_are_you">How old are you?</string>
     <string name="input_your_age">Input your age</string>
     <string name="compute">CALCULATE</string>
     <string name="you_must_insert_your_age">You must insert your age</string>
